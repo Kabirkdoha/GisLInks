@@ -1,0 +1,24 @@
+2A: Importing Spread-sheet or CSV file.
+Step 1: Project -> new project
+Step 2:  Layer -> Add Layer -> Add Delimited text layer.
+Step 3: Browse file -> (GPW)v3 dataset from file.
+Step 4:  Set CRS to EPSG:4326 -> OK
+
+2B: Raster Styling & analysis.
+Step 1: Select ‘ glds90age60.asc ’ layer from layer pane -> select property
+Step 2:  Go to symbology -> render type -> single pseudocolor -> mode ->continous ->apply
+Step 3: Repeat same same for ‘ glds00age60@1 ’ layer
+Step 4:  Raster -> raster calculator
+Step 5: Put expression -> ‘ glds00age60@1 ’- ‘ glds90age60@1 ’
+Step 6: Select output file location & name -> press OK
+Step 7: Remove layers glds00age60.asc & glds90age60.asc
+Step 8: Double click on pop-diff layers.
+Step 9: Select symbology -> interpretation -> Discretes
+Step 10: Remove all classification -> Press OK
+
+2C - Raster Mosaicking & clipping
+step1: click on layer -> click on add layer ->click on raster layer -> select for 4 image -> click on ok
+step 2: Deselect 4 image option 
+step 3:click on layer -> click on add layer -> click on mesh layer->click on IND_adm0.shp -> click on open
+step 4: click on  raster -> click on extraction -> click on clip on raster on mask layer
+step 5: click on intup layer -> click on merge -> click on run -> click on close
