@@ -1,0 +1,52 @@
+3A: 
+Step 1: Go to project->new project
+Step 2: In project -> open-> browse and select the “ natural_Earth_quick_start_for_QGIS.qgs ” file -> click on open
+Step 3: Click the Zoom In button and draw a rectangle around India to zoom to the area.
+Step 4: Type UTM zone 45N in filter search box. Select WGS 84 / UTM zone 45N EPSG:32645 & click apply.
+Step 5: Go to Project ‣ New Print Layout-> OK
+Step 6: Go to Layout ‣ Add Map
+Step 7: Once the Add Map button is active, hold the left mouse button and drag a rectangle where you want to insert the map.
+Step 8: Click on the Item Properties tab and enter 7000000 for Scale value
+Step 9: In layers window check the boxes for lock layer and lock styles for layer.
+Step 10: Switch to the main QGIS window. Use the Zoom In button to zoom to the area around Mumbai.
+Step 11: Switch the Print Layout window. Go to Layout ‣ Add Map
+Step 12: Drag a rectangle at the place where you want to add the map inset.
+Step 13: select map1 object-> properties tab->click on Add a new overview button-> select map 2 as the map frame
+ Step 14: select map1 object->item properties tab->go to grids section-> Click the Add a new grid button->modify grid
+Step 15: in CRS-> enter 4326 in the Filter box-> select the WGS84 EPSG:4326 as the CRS->OK
+Step 16: Select the Interval values as 5 degrees in both X and Y direction
+Step 17: Click Add Item ‣ Add Image-> On the right-hand panel, click on the Item Properties tab and expand the Search directories section and select the North Arrow image of your liking.
+Step 18: Click on Add Item ‣ Add Scalebar-> from item properties give properties of your choice->from segment panel adjust the number of segments and their size.
+Step 19: Click on Add Item ‣ Add Label-> Click on the map and draw a box where the label should be-item properties tab->check the box render as html->type the given code [Map of Japan]
+Step 20: Click Layout ‣ Export as Image
+
+
+3B: Importing Spread-sheet or CSV file.
+Step 1: First create a new file.
+Step 2:  Layer -> Add Layer -> Add Delimited text layer.
+Step 3: Browse file -> Sample(file name).
+Step 4:  Check Custom delimiters.
+Step 5: Set Geometry  CRS =  EPSG:4326-WGS 84.
+Step 6: Add.
+
+
+3C: Using Plugin
+Step 1: Create new file.
+Step 2: Plugin -> Manage and install plugins.
+Step 3: Not installed-> search "attribute painter" -> install attribute painter.
+step 4: For Checking attribute installed or not :   goto->Installed ( check the attribute is checked[✓]).
+
+
+
+
+3D: Searching and downloading OpenStreetMap data (OSM data).
+ Two Plugins must be used are as follow's :
+OSM place search( purpose: Search live data).
+Open layer plugin( purpose: GPS).
+
+Step 1: New project.
+Step 2: Plugins -> Manage and install plugins -> Not installed.
+Step 3: Search and install OSM place search and Open layer plugin.
+Step 4 : Now go to install and check they are installed.
+Step 5: Goto: Web->Open layer plugin -> open street map -> open street map.(Note: If you get an error Close the application and repeat the process again) . 
+Step 6: Search any region in search contains for eg: mumbai (the region will be visible) .
