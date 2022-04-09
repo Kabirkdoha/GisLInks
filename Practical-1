@@ -1,0 +1,28 @@
+1 A : Adding vector layer
+Step 1: Select Project→New
+Step 2:  Select Layer→Create Layer→New Shapefile Layer
+
+1 B : Setting properties
+Step 1: Fill the appropriate information in each text box 
+Step 2:  :  Select the  required geometry.
+Step 3: Give the desired field names -> desired property names
+Step 4:  Click on Add to Field List Button
+
+1 C : Vector Layer Formatting
+Step 1: Click on toggle button -> Draw
+Step 2:  Select your desired style from properties 
+Step 3: The  same steps should be repeated for the selection/setting another geometry type. 
+
+1 D :  Calculating line lengths and statistics
+Step 1: Go to Layer → Add Layer → Add Vector Layer.
+Step 2:  source -> "\GIS_Workshop\Practicals\Practical_01\D\DATA\IND_rrd\IND_rails.shp" Press “ADD”
+Step 3: Also add India Administrative Map “GIS_Workshop\Practicals\Practical_01\D\DATA\IND_adm\IND_adm0.shp”
+Step 4 : Double Click on IND_adm0 -> Select your desired symbology -> OK
+Step 5: Click on IND_rails -> open Attribute table
+Step 6: Press Toggle Editing button using button, on Attribute table window toolbar.
+Step 8: Set the output field as “Track_Len”, field type to “Decimal Number”.
+Step 9 : From Function List search $length or go to Geometry → Select $length
+Step 10 : Set expression as $len/1000 -> OK
+Step 11: ctrl+s -> close 
+Step 12: Select Vector→ Analysis Tools→ Basic Statics for Fields 
+Step 13: Select IND_rails layer from input layer. And select Track_Len in “Field to Calculate statistics on” -> RUN
