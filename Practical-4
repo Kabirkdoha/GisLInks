@@ -1,0 +1,18 @@
+4A: Woking with attributes
+Step 1:   Goto "Layer->Add Layer->Raster Layer"
+Step 2: Browse file ->"populated_places_simple.zip"-> Add 
+Step 3: Select layer from layer window -> right click -> "Open attribute table"
+Step 4: Expression window -> "pop_max > 100 and pop_max < 100000 " -> Select feature-> close 
+Step 5: Expression window -> "pop_max > 100 and pop_max < 100000 and sov0name = 'India'  " -> Select feature-> close
+
+
+4 B.Terrain data and hill shade analysis 
+Step 1: Go to "Layer->Add Layer->Raster Layer"
+Step 2: Browse file ->" GMTED2010N10E060_300\10n060e_20101117_gmted_mea300.tif "-> Add
+Step 3: Raster ->Extraction->clip Raster by Extention.
+Step 4: Raster ->Extraction->Contour
+Step 5: layers ->contur -> properties ->labels -> single lables
+Step 6: layers ->contur ->open attribute table ->select the max value->zoom map
+Step 6: layers ->save as “Keyhole Markup Language”
+Step 7: Google chrome-> Google earth
+Step 8: Raster -> Analysis -> hillshade  ->himalaya_hillshade ->hillshade ->save as 
